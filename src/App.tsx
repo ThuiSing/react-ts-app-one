@@ -1,11 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
+import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
+import store from "redux/store";
+import TheMainLayout from "views/pages/TheMainLayout";
 
 const App = () => {
-  const [hello, setHello] = useState();
   return (
-    <div>
-      <h3>Hello</h3>
-    </div>
+    <Provider store={store}>
+      <BrowserRouter>
+        <TheMainLayout />
+      </BrowserRouter>
+    </Provider>
   );
 };
 
