@@ -3,7 +3,7 @@ import httpReq from "./http.service";
 class productService {
   async getAllProducts(): Promise<Iproduct[]> {
     const { data } = await httpReq.get("/product");
-    console.log(data);
+    // console.log(data);
 
     return data;
   }

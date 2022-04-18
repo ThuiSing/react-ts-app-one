@@ -2,7 +2,7 @@ import useAPI from "hooks/useAPI";
 import React from "react";
 import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
-import { add_to_cart, remove_from_cart } from "redux/actions/cartAction";
+import { add_to_cart } from "redux/actions/cartAction";
 import productService from "services/product.service";
 
 const SingleProduct = () => {
@@ -37,12 +37,12 @@ const SingleProduct = () => {
           >
             Add to cart
           </button>
-          <button
+          {/*  <button
             onClick={() => dispatch(remove_from_cart(id))}
             className="bg-gray-700 text-white py-2 px-3 font-semibold rounded"
           >
             remove to cart
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

@@ -17,3 +17,9 @@ export const clear_cart = () => {
     type: cartActionTypes.CLEAR_CART,
   };
 };
+/* 
+type x = ReturnType<typeof add_to_cart>;
+type y = ReturnType<typeof remove_from_cart>;
+type z = ReturnType<typeof clear_cart>;
+
+export type cartActionType = x | y | z; */

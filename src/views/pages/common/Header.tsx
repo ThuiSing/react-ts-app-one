@@ -10,6 +10,9 @@ const Header = () => {
         </Link>
       </div>
       <div className="pr-2">
+        <Link to="/login" className=" font-semibold mr-5">
+          login
+        </Link>
         <input type="text" className="w-72  p-2" placeholder="search here" />
       </div>
     </div>
